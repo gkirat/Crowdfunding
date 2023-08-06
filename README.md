@@ -15,6 +15,16 @@ This Solidity smart contract implements a crowdfunding platform that allows indi
 5. **Refund Mechanism:** If the target amount is not reached by the deadline, donors can request a refund of their donated Ether.
 
 6. **Transfer of Funds:** Once the target is reached, the manager can initiate the transfer of the donated Ether to the recipient address if more than 50% of the donors approve the request.
+7. Second Smart Contract
+
+Features (Improvements over the First Contract):
+
+8. Improved Voting System: In this contract, only donors who have contributed are allowed to vote on specific donation requests. This prevents non-contributors from influencing voting outcomes.
+   
+10. Simplified Request Generation: The second contract uses a generaterequest() function to create new donation requests, which makes it easier to manage multiple requests without specifying a unique identifier (index) for each request.
+11. 
+12. Voting Completion Flag: The contract includes a votingcomplete flag in each request to keep track of whether voting for a request has been completed.
+Request Visibility: The contract uses a numrequests variable to manage the total number of donation requests, which allows the public to access the count of requests.
 
 ## Usage
 
